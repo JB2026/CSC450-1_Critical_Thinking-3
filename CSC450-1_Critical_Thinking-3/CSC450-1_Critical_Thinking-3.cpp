@@ -77,7 +77,6 @@ void outputPointerInformation(int* pointer, std::string valueName) {
 void getInput(int* number) {
     // Declare methods parameters
     bool hasValidInput = false;
-    string errorString = "Value entered is not a valid interger. Please try again.";
     
     // While the user has not entered a valid input, keep prompting them for one
     while (!hasValidInput) {
@@ -91,7 +90,7 @@ void getInput(int* number) {
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
                 
                 // Let the user know the input is invalid
-                output(errorString);
+                output("Value entered is not a valid interger. Please try again.");
             } else {
                 // Since the input is valid, set it to be valid so the loop exits
                 hasValidInput = true;
