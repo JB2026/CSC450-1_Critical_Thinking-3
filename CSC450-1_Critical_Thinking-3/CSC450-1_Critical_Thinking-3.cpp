@@ -60,6 +60,7 @@ int main(int argc, const char * argv[]) {
         cout<< "There was an unknown exception thrown."<<endl;
     }
     
+    // Main method's return
     return 0;
 }
 
